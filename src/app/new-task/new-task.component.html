@@ -1,0 +1,26 @@
+<p>new-task works!</p>
+
+<mat-card class="excard">
+    <mat-card-header class="exheader"><h4>Create new task:</h4></mat-card-header>
+  
+  
+      <!-- <p class="Required" *ngIf ="!personForm.valid">*required</p> -->
+    Task Name:<mat-form-field>
+      <input matInput placeholder="enter task name" onfocus="this.value= ''" [(ngModel)] = "taskName">
+    </mat-form-field><br>
+   
+    <!-- <p class="Required"*ngIf ="!personForm.valid">*required</p> -->
+    Task Priority:<mat-form-field>
+      <input matInput placeholder="enter priority" onfocus="this.value= ''" [(ngModel)] = "Prior">
+  </mat-form-field><br>
+    
+  <!-- <p class="Required" *ngIf ="!personForm.valid">*required</p> -->
+    Task Date:<mat-form-field>
+      <input type ="date" matInput placeholder="enter TaskDate" onfocus="this.value= ''" [(ngModel)] = "taskDate">
+    </mat-form-field><br>
+
+    <button mat-raised-button color= "warn" (click) = "AddNewTask(taskName, Prior, taskDate)">Save</button>
+  </mat-card> 
+    
+   
+   

@@ -1,0 +1,19 @@
+<p>my-task works!</p>
+<h3>Your Tasks are:</h3>
+<div *ngFor ="let Tasks of NewTask">
+
+    <mat-card class="excard">
+   <mat-list>
+<mat-list-item><h4>Task Name: </h4>{{Tasks.TaskName}}</mat-list-item> 
+<mat-divider></mat-divider><br>
+
+<mat-list-item><h4>Task Priority: </h4>{{Tasks.Priority}} </mat-list-item>
+<mat-divider></mat-divider><br>
+
+<mat-list-item><h4>Task Date: </h4>{{Tasks.TaskDate}} </mat-list-item>
+<mat-divider></mat-divider>
+<button mat-raised-button color= "warn"  (click) = RemoveTask(Tasks)>Delete</button><br>
+
+</mat-list>
+</mat-card> 
+</div>
